@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorIndivateTab">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editWriteMessage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/editWriteMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/edittext_boder"
+        android:maxLines="7"
+        android:minHeight="45dp"
+        android:paddingLeft="47dp"
+        android:paddingRight="47dp"
+        android:hint="Enter message..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorHint="#aeafaf"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:id="@+id/add_image"
+        android:src="@drawable/ic_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerInside"
+        android:layout_height="45dp" />
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#fff"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_send" />
+
+    <View
+        android:id="@+id/line"       
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_200"
+        android:layout_above="@id/editWriteMessage"/>
+
+</RelativeLayout>
